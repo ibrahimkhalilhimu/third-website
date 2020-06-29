@@ -21,6 +21,14 @@
 
 
              .one::after{content: " jalu";}
+             body{counter-reset: section;}
+             h4::before{counter-increment: section;
+             content:"one" counter(section)":";}
+
+             .contain{background-color: blue;}
+             div{width: 100px;
+             height: 100px;}
+
     </style>
 
 </head>
@@ -47,5 +55,18 @@
         <li>kamal</li>
         <li>jamal</li>
         <li>kalu</li></ol>
+        <br>
+        <h4>kalu</h4>
+        <h4>dalu</h4>
+        <h4>motu</h4>
+
+        <section>Hello Bangladesh</section>
+        <section class="contain">
+         <div id="1st"></div>
+         <div id="2nd"></div>
+         <div id="3rd"></div>
+
+
+        </section>
 </body>
 </html>
